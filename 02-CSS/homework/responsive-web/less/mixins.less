@@ -1,0 +1,32 @@
+// Mixins acá
+.flex (@justify, @align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.img-mix(@border-img, @margin-img){
+  border-radius: @border-img;
+  margin: @margin-img;
+}
+
+.title-mix(){
+  font-size: 3.1em;
+  padding: 0.8em;
+  color: @nav-font;
+}
+
+.btn-mix(@bg-color, @text-color){
+  background-color: @bg-color;
+  color: @text-color;
+  width: fit-content;
+  padding: 0.8em;
+  border-radius: 0.4em;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  &:hover{
+    background-color:@sea-shell;
+    color: @ebony-clay;
+    border: @btn-bg-color 1px solid;
+  }
+}

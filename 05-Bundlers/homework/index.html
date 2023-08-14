@@ -1,0 +1,39 @@
+<!--
+    1. Verificar dependencias que tenemos. 2. Buscar y quitar los IIFEs. 3. Encontrar las llamadas
+     a window y reemplazarlas por require y module.exports. 4. Instalar webpack. 5. Agregar un script
+     a package.json. 6. Configurar webpack. 7. Crear el bundle y enlazarlo en el doc HTML.
+-->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset=UTF-8>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="paint"></canvas>
+
+    <div id="color-selector">
+        <div class="marker selected" id="black"></div>
+        <div class="marker" id="purple"></div>
+        <div class="marker" id="red"></div>
+        <div class="marker" id="blue"></div>
+        <div class="marker" id="green"></div>
+        <div class="marker" id="orange"></div>
+        <div class="marker" id="yellow"></div>
+        <div class="marker" id="brown"></div>
+    </div>
+
+    <!-- Ahora todo esto se encuentra comprimido en bundle.js <script src="/socket.io/socket.io.js"></script>
+    <script src="event-emitter.js"></script>
+    <script src="whiteboard.js"></script>
+    <script src="app.js"></script> -->
+
+    <script src="bundle.js"></script>
+    
+
+
+</body>
+
+</html>
